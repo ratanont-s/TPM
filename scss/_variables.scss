@@ -1,5 +1,7 @@
 // Theme colors
 $primary:#B88B47;
+$primary-dark:#78542E;
+$primary-light:#D3A971;
 
 // Body
 $body-color: #F6F7F0;
@@ -15,3 +17,16 @@ $footer-copyright-bg: #000000;
 // Font
 $font-family-base:'thaisans_neuelight';
 $font-size-base: 1.25rem;
+$headings-font-family: 'thai_sans_literegular';
+
+// Card
+$card-body-bg:#222222;
+
+// Link
+$link-hover-decoration: none;
+
+// Button
+$btn-border-width:0;
+$btn-padding-y: 4px;
+$btn-padding-x: 32px;
+$btn-font-family: 'thaisans_neuesemi_bold';

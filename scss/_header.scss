@@ -1,8 +1,34 @@
 .header {
-    background: url('../img/bg-header.png') no-repeat center top/cover;
+    background: url('../img/bg-header.png') no-repeat center bottom/cover;
 
-    &-logo {
-        display: inline-block;
+    >.container-fluid {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        &-nav {
+            @include media-breakpoint-up(lg) {
+                width: 100%;
+
+                .nav-item {
+                    flex: 1 1 auto;
+                }
+            }
+        }
+    }
+
+    .nav {
+        &-item.active .nav-link {
+            @include thaisans_neueblack;
+            color: $primary;
+        }
+
+        &-link {
+            text-align: center;
+            @include thaisans_neueregular;
+            font-size: 22px;
+        }
     }
 
     @include media-breakpoint-down(md) {

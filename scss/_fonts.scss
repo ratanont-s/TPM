@@ -1,3 +1,4 @@
+// Supermarket
 @font-face {
     font-family: 'supermarketregular';
     src: url('../fonts/supermarket-webfont.woff2') format('woff2'),
@@ -11,7 +12,42 @@
     font-family: 'supermarketregular';
 }
 
+// Thaisans Neue
+@font-face {
+    font-family: 'thaisans_neuelight';
+    src: url('../fonts/thaisansneue-light-webfont.woff2') format('woff2'),
+        url('../fonts/thaisansneue-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'thaisans_neueregular';
+    src: url('../fonts/thaisansneue-regular-webfont.woff2') format('woff2'),
+        url('../fonts/thaisansneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'thaisans_neuesemi_bold';
+    src: url('../fonts/thaisansneue-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/thaisansneue-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'thaisans_neuebold';
+    src: url('../fonts/thaisansneue-bold-webfont.woff2') format('woff2'),
+        url('../fonts/thaisansneue-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'thaisans_neueblack';
@@ -26,9 +62,23 @@
     font-family: 'thaisans_neueblack';
 }
 
+@mixin thaisans_neuebold {
+    font-family: 'thaisans_neuebold';
+}
 
+@mixin thaisans_neuelight {
+    font-family: 'thaisans_neuelight';
+}
 
+@mixin thaisans_neueregular {
+    font-family: 'thaisans_neueregular';
+}
 
+@mixin thaisans_neuesemi_bold {
+    font-family: 'thaisans_neuesemi_bold';
+}
+
+// DSN LardPhrao
 @font-face {
     font-family: 'dsn_lardphraoregular';
     src: url('../fonts/dsnlp___-webfont.woff2') format('woff2'),
@@ -42,9 +92,7 @@
     font-family: 'dsn_lardphraoregular';
 }
 
-
-
-
+// Thai Sans Lite
 @font-face {
     font-family: 'thai_sans_literegular';
     src: url('../fonts/thaisanslite_r1-webfont.woff2') format('woff2'),
@@ -58,25 +106,7 @@
     font-family: 'thai_sans_literegular';
 }
 
-
-
-
-@font-face {
-    font-family: 'thai_sans_literegular';
-    src: url('../fonts/thaisanslite_r1-webfont.woff2') format('woff2'),
-        url('../fonts/thaisanslite_r1-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@mixin thai_sans_literegular {
-    font-family: 'thai_sans_literegular';
-}
-
-
-
-
+// Gunship Shadow Ital
 @font-face {
     font-family: 'gunship_shadow_italshadowital';
     src: url('../fonts/gunship-shadow-ital_allfont.net-webfont.woff2') format('woff2'),
@@ -88,68 +118,4 @@
 
 @mixin gunship_shadow_italshadowital {
     font-family: 'gunship_shadow_italshadowital';
-}
-
-
-
-
-@font-face {
-    font-family: 'thaisans_neuebold';
-    src: url('../fonts/thaisansneue-bold-webfont.woff2') format('woff2'),
-        url('../fonts/thaisansneue-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@mixin thaisans_neuebold {
-    font-family: 'thaisans_neuebold';
-}
-
-
-
-
-@font-face {
-    font-family: 'thaisans_neuelight';
-    src: url('../fonts/thaisansneue-light-webfont.woff2') format('woff2'),
-        url('../fonts/thaisansneue-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@mixin thaisans_neuelight {
-    font-family: 'thaisans_neuelight';
-}
-
-
-
-
-@font-face {
-    font-family: 'thaisans_neueregular';
-    src: url('../fonts/thaisansneue-regular-webfont.woff2') format('woff2'),
-        url('../fonts/thaisansneue-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@mixin thaisans_neueregular {
-    font-family: 'thaisans_neueregular';
-}
-
-
-
-
-@font-face {
-    font-family: 'thaisans_neuesemi_bold';
-    src: url('../fonts/thaisansneue-semibold-webfont.woff2') format('woff2'),
-        url('../fonts/thaisansneue-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@mixin thaisans_neuesemi_bold {
-    font-family: 'thaisans_neuesemi_bold';
 }

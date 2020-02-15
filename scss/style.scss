@@ -4,3 +4,16 @@
 @import './header';
 @import './footer';
 @import './landing';
+@import './card';
+@import './button';
+@import './text';
+@import './selectpicker';
+
+html,
+body {
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+}

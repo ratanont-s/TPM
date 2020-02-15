@@ -1,0 +1,8 @@
+// Primary
+.btn-primary {
+    @include gradient-y($start-color: $primary-dark, $end-color: $primary-light, $start-percent: 0%, $end-percent: 100%);
+
+    &:hover {
+        @include gradient-x($start-color: #12130D, $end-color: #C6C6C6, $start-percent: 0%, $end-percent: 100%);
+    }
+}

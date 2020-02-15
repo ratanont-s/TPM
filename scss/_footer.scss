@@ -2,7 +2,27 @@
     background-color: $footer-bg;
 
     &-content {
-        padding: 35px 35px 10px;
+        padding: 35px 0 10px;
+
+        >.container-fluid {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .list-inline {
+            &-item {
+                a {
+                    img {
+                        @include transition($transition-base);
+                    }
+
+                    &:hover img {
+                        transform: scale(1.1);
+                        @include transition($transition-base);
+                    }
+                }
+            }
+        }
     }
 
     &-item {
@@ -14,5 +34,10 @@
     &-copyright {
         background-color: $footer-copyright-bg;
         padding: .75em 0;
+
+        >.container-fluid {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
     }
 }

@@ -7,6 +7,10 @@
     }
 
     .navbar {
+        @include media-breakpoint-down(md) {
+            padding: 0 !important;
+        }
+
         &-nav {
             @include media-breakpoint-up(lg) {
                 width: 100%;
@@ -22,24 +26,34 @@
         &-item.active .nav-link {
             @include thaisans_neueblack;
             color: $primary;
+
+            span {
+                border-bottom-color: $primary;
+            }
         }
 
         &-link {
             text-align: center;
             @include thaisans_neueregular;
             font-size: 22px;
+
+            span {
+                border-bottom: 2px solid transparent;
+            }
         }
     }
 
     @include media-breakpoint-down(md) {
         .offcanvas-collapse {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             position: fixed;
             top: 0;
             bottom: 0;
             right: 100%;
             width: 100%;
-            padding-right: 1rem;
-            padding-left: 1rem;
+            padding: 1rem;
             overflow-y: auto;
             visibility: hidden;
             background-color: $header-offcanvas-bg;
@@ -58,8 +72,15 @@
 }
 
 .is-sticky {
-    .navbar {
+    .header-top {
         background-color: rgba(black, .75);
         backdrop-filter: blur(.5rem);
+    }
+
+    @include media-breakpoint-up(lg) {
+        .navbar {
+            background-color: rgba(black, .75);
+            backdrop-filter: blur(.5rem);
+        }
     }
 }

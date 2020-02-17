@@ -6,6 +6,12 @@
         margin: 0 auto;
     }
 
+    .img-logo {
+        @include media-breakpoint-down(md) {
+            max-height: 100px;
+        }
+    }
+
     .navbar {
         @include media-breakpoint-down(md) {
             padding: 0 !important;

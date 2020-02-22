@@ -6,3 +6,27 @@
         @include gradient-x($start-color: #12130D, $end-color: #C6C6C6, $start-percent: 0%, $end-percent: 100%);
     }
 }
+
+.btn-group-view {
+    .btn {
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px !important;
+
+        &.active {
+            background-color: $primary !important;
+        }
+
+        +.btn {
+            margin-left: 16px;
+        }
+
+        input {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+section.carall {
+    .carall {
+        &-title {
+            position: relative;
+
+            .btn-group-view {
+                position: absolute;
+                top: 1rem;
+                right: 0;
+                z-index: 1;
+
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .card-newcar {
+        padding-bottom: 0;
+        margin-bottom: 40px;
+
+        .card {
+            &-img {
+                &::before {
+                    height: 32px;
+                }
+
+                &:after {
+                    height: 17px;
+                }
+
+                &-frame {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            &-body {
+                color: white;
+            }
+
+            &-title {
+                color: $primary;
+            }
+
+            &-viewdetail {
+                display: none;
+                color: $primary;
+                text-align: right;
+                text-decoration: underline;
+            }
+
+            &-price {
+                margin-bottom: 0;
+                position: absolute;
+                bottom: calc(-33px / 2);
+                left: 8px;
+                right: 0;
+            }
+        }
+    }
+
+    .row-cols-1 {
+        .card-newcar {
+            flex-direction: row;
+
+            .card {
+                &-img {
+                    max-width: 283px;
+
+                    &:after {
+                        right: 0;
+                    }
+                }
+
+                &-body {
+                    padding: 24px 24px 24px 40px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 24px;
+                        right: 24px;
+                        width: 134px;
+                        height: 42px;
+                        background: url('../img/logo-light.svg') no-repeat center center/contain;
+                    }
+                }
+
+                &-year {
+                    text-align: left;
+                }
+
+                &-viewdetail {
+                    display: block;
+                }
+
+                &-price {
+                    left: 40px;
+                }
+            }
+        }
+    }
+}

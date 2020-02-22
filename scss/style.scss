@@ -8,12 +8,18 @@
 @import './button';
 @import './text';
 @import './selectpicker';
+@import './pagination';
+@import './section';
 
 html,
 body {
     position: relative;
+    overflow-x: hidden;
 }
 
-body {
-    overflow-x: hidden;
+main {
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
 }

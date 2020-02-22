@@ -2,7 +2,9 @@
 .main-content {
     position: relative;
     padding: 16px 0 63px;
-    background: url('../img/bg-main-content.png') no-repeat center bottom/100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
     overflow-x: hidden;
 
     &::before {

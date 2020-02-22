@@ -126,3 +126,39 @@
         }
     }
 }
+
+// List
+// .card-list {
+//     flex-direction: row;
+
+//     &::before {
+//         content: '';
+//         position: absolute;
+//         top: 24px;
+//         right: 24px;
+//         width: 134px;
+//         height: 42px;
+//         background: url('../img/logo-light.svg') no-repeat center center/contain;
+//     }
+
+//     &::after {
+//         content: 'ดูรายละเอียด';
+//         position: absolute;
+//         bottom: 24px;
+//         right: 24px;
+//     }
+
+//     .card {
+//         &-img {
+//             width: 283px;
+//         }
+
+//         &-body {
+//             padding-left: 40px;
+//         }
+
+//         &-year {
+//             text-align: left;
+//         }
+//     }
+// }

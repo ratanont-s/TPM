@@ -393,3 +393,166 @@ section.service {
         }
     }
 }
+
+// Contact
+section.contact {
+    .contact {
+        &-address {
+            position: relative;
+
+            @include media-breakpoint-up(lg) {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 32px;
+                    left: 0;
+                    width: 100%;
+                    height: 431px;
+                    background-color: #12130D;
+                    box-shadow: 0 3px 25px rgba(black, .16);
+                }
+            }
+
+            address {
+                color: $primary;
+
+                @include media-breakpoint-up(lg) {
+                    margin-top: 80px;
+                }
+
+                strong {
+                    @include thai_sans_literegular;
+                    font-size: 32px;
+                }
+            }
+
+            .list-address {
+                @include thaisans_neuebold;
+                font-size: 24px;
+                list-style: none;
+
+                li {
+                    position: relative;
+                    margin-bottom: 0.25rem;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 5px;
+                        left: -40px;
+                        width: 24px;
+                        height: 24px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: contain;
+                    }
+
+                    &:nth-child(1)::before {
+                        background-image: url('../img/icons/address.svg');
+                    }
+
+                    &:nth-child(2)::before {
+                        background-image: url('../img/icons/phone.svg');
+                    }
+
+                    &:nth-child(3)::before {
+                        background-image: url('../img/icons/fax.svg');
+                    }
+                }
+            }
+
+            .text-line {
+                font-size: 32px;
+            }
+        }
+
+        &-map {
+            border: 1px solid #707070;
+            border-radius: 4px;
+            box-shadow: 0 3px 6px rgba(black, .16);
+
+            @include media-breakpoint-down(md) {
+                margin-left: -15px;
+                margin-right: -15px;
+                width: calc(100% + 30px);
+                height: 273px;
+                border-width: 0;
+                border-radius: 0;
+            }
+        }
+
+        &-slider {
+            padding: 40px 0 50px;
+
+            @include media-breakpoint-up(lg) {
+                padding: 60px 0 80px;
+            }
+
+            &-item {
+                padding: 0 calc(15px / 2);
+
+                img {
+                    width: 100%;
+                    box-shadow: 0 3px 6px rgba(black, .16);
+                    margin: 0 auto;
+                }
+            }
+
+            .slick-arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1;
+                padding: 0;
+                border-width: 0;
+                background-color: transparent;
+                opacity: 0.7;
+
+                &:hover {
+                    opacity: 1;
+                    filter: drop-shadow(0 0 6px $primary);
+                }
+
+                &:focus {
+                    outline-width: 0;
+                }
+
+                &.prev {
+                    left: calc(-23px / 2);
+                }
+
+                &.next {
+                    right: calc(-23px / 2);
+                }
+            }
+
+            .slick-list {
+                position: relative;
+
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    width: 100px;
+                    height: 100%;
+                    z-index: 1;
+
+                    @include media-breakpoint-up(lg) {
+                        height: calc(100% - 11px);
+                    }
+                }
+
+                &::before {
+                    left: 0;
+                    @include gradient-x($start-color: rgba(black, .75), $end-color: rgba(black, 0), $start-percent: 0%, $end-percent: 100%);
+                }
+
+                &::after {
+                    right: 0;
+                    @include gradient-x($start-color: rgba(black, 0), $end-color: rgba(black, .75), $start-percent: 0%, $end-percent: 100%);
+                }
+            }
+        }
+    }
+}

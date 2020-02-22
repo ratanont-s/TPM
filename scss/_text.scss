@@ -20,4 +20,11 @@
             margin-top: -30px;
         }
     }
+
+    p {
+        color: white;
+        @include dsn_lardphraoregular;
+        font-size: 20px;
+
+    }
 }

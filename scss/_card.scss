@@ -67,6 +67,7 @@
         }
 
         &-body {
+            color: $body-color;
             background-color: $card-body-bg;
             padding: 8px;
             border-radius: 4px;
@@ -74,6 +75,7 @@
         }
 
         &-title {
+            color: $primary;
             @include thaisans_neueblack;
             margin-bottom: 0;
             @include transition($transition-base);

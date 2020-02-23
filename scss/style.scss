@@ -10,6 +10,7 @@
 @import './selectpicker';
 @import './pagination';
 @import './section';
+@import './tab';
 
 html,
 body {
@@ -21,5 +22,5 @@ main {
     background-color: #000;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100% auto;
+    background-size: cover;
 }

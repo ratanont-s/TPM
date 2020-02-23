@@ -1,0 +1,47 @@
+.nav-tabs {
+    border-bottom: 2px solid rgba(#C6C6C6, .2);
+
+    .nav {
+        &-item {
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+
+            @include media-breakpoint-down(md) {
+                flex-grow: 1;
+            }
+        }
+
+        &-link {
+            position: relative;
+            border-width: 0;
+            color: $body-color;
+
+            &.active {
+                @include thaisans_neueblack;
+                color: $primary;
+                border-bottom-color: $primary;
+                background-color: transparent;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $primary;
+                    border-radius: 2px;
+                    box-shadow: 0 3px 6px $primary;
+                }
+            }
+        }
+    }
+}
+
+.tab-content {
+    @include dsn_lardphraoregular;
+    padding: 28px 0;
+}

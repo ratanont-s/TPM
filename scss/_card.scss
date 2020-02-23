@@ -127,38 +127,62 @@
     }
 }
 
-// List
-// .card-list {
-//     flex-direction: row;
+// Financing
+.card-financing {
+    background-color: #222222;
+    box-shadow: 0 3px 6px rgba(black, .16);
+    padding: 20px 22px;
+    border-width: 0;
+    @include thaisans_neuebold;
+    margin-bottom: 40px;
 
-//     &::before {
-//         content: '';
-//         position: absolute;
-//         top: 24px;
-//         right: 24px;
-//         width: 134px;
-//         height: 42px;
-//         background: url('../img/logo-light.svg') no-repeat center center/contain;
-//     }
+    .card {
+        &-title {
+            color: $primary;
+            @include thaisans_neueblack;
+        }
+    }
 
-//     &::after {
-//         content: 'ดูรายละเอียด';
-//         position: absolute;
-//         bottom: 24px;
-//         right: 24px;
-//     }
+    .form-control {
+        border-width: 0;
+        border-radius: 0;
+        background-color: #12130D;
+        color: $body-color;
+    }
+}
 
-//     .card {
-//         &-img {
-//             width: 283px;
-//         }
+// Infomation
+.card-infomation {
+    background-color: #222222;
+    border-width: 0;
+    box-shadow: 0 3px 25px rgba(black, .16);
+    padding: 36px;
 
-//         &-body {
-//             padding-left: 40px;
-//         }
+    @include media-breakpoint-up(lg) {
+        margin-bottom: -80px;
+    }
 
-//         &-year {
-//             text-align: left;
-//         }
-//     }
-// }
+    .card {
+
+        &-title,
+        &-subtitle {
+            text-align: center;
+        }
+
+        &-title {
+            @include thaisans_neuesemi_bold;
+        }
+
+        &-contact {
+            @include thaisans_neuebold;
+            font-size: 24px;
+            margin: 0 auto;
+            width: 150px;
+
+            @include media-breakpoint-up(lg) {
+                width: 440px;
+                text-align: center;
+            }
+        }
+    }
+}

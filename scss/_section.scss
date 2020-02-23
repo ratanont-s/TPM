@@ -556,3 +556,205 @@ section.contact {
         }
     }
 }
+
+// Car detail
+section.cardetail {
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 80px;
+    }
+
+    .cardetail {
+
+        &-bg {
+            @include media-breakpoint-up(lg) {
+                background-color: rgba(black, .6);
+                box-shadow: 0 3px 24px rgba(black, .3);
+                border-radius: 4px;
+            }
+        }
+
+        &-slider {
+            &.slider-for {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 13px;
+                    background: url('../img/car-detail-top.svg') no-repeat right center/contain;
+                    z-index: 1;
+
+                    @include media-breakpoint-up(lg) {
+                        top: 0;
+                        height: 26px;
+                    }
+                }
+
+                .cardetail-slider-item {
+                    margin-top: 6px;
+
+                    img {
+                        width: 100%;
+                        height: 195px;
+                        object-fit: cover;
+                        margin: 0 auto;
+                        border-radius: 4px;
+                        box-shadow: 0 8px 6px rgba(black, .2);
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        margin-top: 13px;
+
+                        img {
+                            height: 386px;
+                        }
+                    }
+                }
+            }
+
+            &.slider-nav {
+                @include media-breakpoint-up(lg) {
+
+                    padding: 0 25px;
+                }
+
+                .cardetail-slider-item {
+                    padding: 6px;
+
+                    &:hover {
+                        filter: drop-shadow(0 0 6px $primary);
+                    }
+
+                    &:focus {
+                        outline-width: 0;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 72px;
+                        object-fit: cover;
+                        margin: 0 auto;
+                        border: 1px solid rgba(#C6C6C6, .2);
+                        border-radius: 4px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        padding: 7px;
+
+                        img {
+                            height: 90px;
+                        }
+                    }
+                }
+
+                .slick-arrow {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 1;
+                    padding: 0;
+                    border-width: 0;
+                    background-color: transparent;
+                    opacity: 0.7;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                        filter: drop-shadow(0 0 6px $primary);
+                    }
+
+                    &:focus {
+                        outline-width: 0;
+                    }
+
+                    &.prev {
+                        left: 0;
+                    }
+
+                    &.next {
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .table {
+        @include media-breakpoint-down(md) {
+            margin-left: -15px;
+            margin-right: -15px;
+            width: calc(100% + 30px);
+        }
+
+        tbody {
+
+            th,
+            td {
+                vertical-align: middle;
+            }
+
+            th {
+                padding-left: 32px;
+            }
+
+            td {
+                @include dsn_lardphraoregular;
+            }
+
+            .tr {
+                &-price {
+                    background: url('../img/bg-tr-price-sm.svg') no-repeat left center/cover;
+
+                    @include media-breakpoint-up(lg) {
+                        background: url('../img/bg-tr-price.svg') no-repeat left center/100% auto;
+                    }
+
+                    th {
+                        @include thaisans_neueblack;
+                    }
+
+                    td {
+                        @include supermarketregular;
+                        font-size: 36px;
+                    }
+                }
+
+                &-down {
+                    background: url('../img/bg-tr-down.svg') no-repeat left center/100% auto;
+
+                    @include media-breakpoint-up(lg) {
+                        background: url('../img/bg-tr-down.svg') no-repeat left center/94% auto;
+                    }
+
+
+                    th {
+                        @include thaisans_neueblack;
+                    }
+
+                    td {
+                        @include dsn_lardphraoregular;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-tabs {
+        @include media-breakpoint-up(lg) {
+            margin-top: 56px;
+        }
+    }
+
+    .tab-content {
+        margin-bottom: 12px;
+    }
+}

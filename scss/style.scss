@@ -19,8 +19,9 @@ body {
 }
 
 main {
-    background-color: #000;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+    background: #000 url('../img/bg-main-mobile.jpg') no-repeat center top/100% auto;
+
+    @include media-breakpoint-up(lg) {
+        background: #000 url('../img/bg-main.jpg') no-repeat center top/100% auto;
+    }
 }

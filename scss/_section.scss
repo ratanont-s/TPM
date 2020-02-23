@@ -399,6 +399,7 @@ section.contact {
     .contact {
         &-address {
             position: relative;
+            text-shadow: 0 3px 6px #000;
 
             @include media-breakpoint-up(lg) {
                 &::before {
@@ -756,5 +757,30 @@ section.cardetail {
 
     .tab-content {
         margin-bottom: 12px;
+    }
+}
+
+// Suggestion
+section.suggestion {
+    .suggestion {
+        &-item {
+            margin-bottom: 16px;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 30px;
+            }
+
+            .embed-responsive {
+                box-shadow: 0 3px 6px rgba(black, .16);
+            }
+
+            &-title {
+                font-size: 32px;
+
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+        }
     }
 }

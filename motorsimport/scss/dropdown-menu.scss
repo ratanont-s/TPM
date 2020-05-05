@@ -1,0 +1,26 @@
+header {
+    .dropdown {
+        &:hover {
+            .dropdown-menu {
+                display: block;
+            }
+        }
+
+        &-toggle {
+            &:active {
+                pointer-events: none;
+            }
+        }
+
+        &-menu {
+            margin-top: -1px;
+            background-color: rgba(black, .9);
+            box-shadow: 0 0 6px white;
+            border-radius: 10px;
+        }
+
+        &-item {
+            color: lightgray;
+        }
+    }
+}

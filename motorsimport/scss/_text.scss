@@ -1,0 +1,30 @@
+// Title
+.text-title {
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    color: $primary;
+    margin-bottom: 36px;
+    @include thai_sans_literegular;
+
+    span {
+        color: $body-color;
+        display: block;
+        font-size: 24px;
+        @include gunship_shadow_italshadowital;
+        opacity: 0.32;
+        margin-top: -25px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 36px;
+            margin-top: -30px;
+        }
+    }
+
+    p {
+        color: white;
+        @include dsn_lardphraoregular;
+        font-size: 20px;
+
+    }
+}

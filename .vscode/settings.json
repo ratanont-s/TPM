@@ -1,0 +1,10 @@
+{
+    "liveSassCompile.settings.includeItems": [
+        "motorsimport/scss/intro.scss"
+    ],
+    "liveSassCompile.settings.formats": [{
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "motorsimport/assets/css"
+    }]
+}
